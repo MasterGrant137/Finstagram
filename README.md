@@ -170,9 +170,11 @@ Alejandro C. Grant - [LinkedIn](https://www.linkedin.com/in/josue-e-j-lugaro-346
 
 Josue E.J. Lugaro - [LinkedIn](https://www.linkedin.com/in/alejandro-c-grant/)
 
-Project Repo Link: [https://github.com/jcahela/Finstagram](https://github.com/jcahela/Finstagram)
+Original Project Repo: [https://github.com/jcahela/Finstagram](https://github.com/jcahela/Finstagram)
 
-Project Link: [https://finstagram-1.herokuapp.com/](https://finstagram-1.herokuapp.com/)
+Current Project Repo: [https://github.com/MasterGrant137/Finstagram](https://github.com/MasterGrant137/Finstagram)
+
+Site: [https://finstagram-1.herokuapp.com/](https://finstagram-1.herokuapp.com/)
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
