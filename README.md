@@ -9,7 +9,7 @@
   <p align="center">
     A portfolio clone of <a href="https://www.instagram.com/">Instagram.com</a>
     <br />
-    <a href="https://finstagram-project.herokuapp.com/" target="_blank"><strong>Explore the website »</strong></a>
+    <a href="https://finstagram-1.herokuapp.com/" target="_blank"><strong>Explore the website »</strong></a>
     <br />
     <br />
   </p>
@@ -48,13 +48,13 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project 
+## About The Project
 [Back to top](#table-of-contents)
-[![Product Name Screen Shot][product-screenshot]](https://finstagram-project.herokuapp.com/)
+[![Product Name Screen Shot][product-screenshot]](https://finstagram-1.herokuapp.com/)
 
 Instagram is a well known website with a lot of interesting social media aspects, which presented challenges with redux state and database relationships. It was a good opportunity to show our ability to create a full stack website built after one of the most popular websites in the world.
 
-### Built With 
+### Built With
 [Back to top](#table-of-contents)
 * [AWS - Amazon Web Services](https://aws.amazon.com/)
 * [PostgreSQL](https://www.postgresql.org/docs/)
@@ -69,48 +69,48 @@ Instagram is a well known website with a lot of interesting social media aspects
 
 Users can signup and login to use Finstagram, and can login as a demo user to experience the website quickly.
 
-[![Product Name Screen Shot][signup]](https://finstagram-project.herokuapp.com/signup)
-[![Product Name Screen Shot][product-screenshot]](https://finstagram-project.herokuapp.com/login)
+[![Product Name Screen Shot][signup]](https://finstagram-1.herokuapp.com/signup)
+[![Product Name Screen Shot][product-screenshot]](https://finstagram-1.herokuapp.com/login)
 <br>
 <br>
 Once logged in, the user is directed to the Feed page, where logged-in users can view a feed of posts from users they follow, as well as their own posts.
 
-[![Product Name Screen Shot][feed]](https://finstagram-project.herokuapp.com/signup)
+[![Product Name Screen Shot][feed]](https://finstagram-1.herokuapp.com/signup)
 
 Logged in users can add a new post, which appears at the top of the screen. Users can post images, gifs, or videos, as accepted file types. For posts a user owns, they can edit and delete the post. Users can also like and unlike a post.
 
 ### Adding a post:
-[![Product Name Screen Shot][addPost]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][addPost]](https://finstagram-1.herokuapp.com/feed)
 
 ### Editing a post:
-[![Product Name Screen Shot][editPost]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][editPost]](https://finstagram-1.herokuapp.com/feed)
 
 ### Deleting a post:
-[![Product Name Screen Shot][deletePost]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][deletePost]](https://finstagram-1.herokuapp.com/feed)
 
 ### Liking and unliking a post:
-[![Product Name Screen Shot][likeUnlike]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][likeUnlike]](https://finstagram-1.herokuapp.com/feed)
 
 Users can add, edit, and delete a comment.
 
 ### Adding a comment:
-[![Product Name Screen Shot][addComment]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][addComment]](https://finstagram-1.herokuapp.com/feed)
 
 ### Editing a comment:
-[![Product Name Screen Shot][editComment]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][editComment]](https://finstagram-1.herokuapp.com/feed)
 
 ### Deleting a comment:
-[![Product Name Screen Shot][deleteComment]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][deleteComment]](https://finstagram-1.herokuapp.com/feed)
 
 Users can hover over the username or user image of a post's author to view that user's information. It also shows the following status of the logged in user in relation to the post author user.
 
 ### View user hover card:
-[![Product Name Screen Shot][viewHover]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][viewHover]](https://finstagram-1.herokuapp.com/feed)
 
 Users can also click on the likes count on any post to view which users liked that post. From here, users can see whether they're following anyone in this list, and follow/unfollow as they wish.
 
 ### View post's liked users:
-[![Product Name Screen Shot][viewLikes]](https://finstagram-project.herokuapp.com/feed)
+[![Product Name Screen Shot][viewLikes]](https://finstagram-1.herokuapp.com/feed)
 
 <br>
 <br>
@@ -119,14 +119,14 @@ Over on the Explore page, users can view posts from users they don't follow, and
 <br>
 
 ### View posts from unfollowed users:
-[![Product Name Screen Shot][exploreModal]](https://finstagram-project.herokuapp.com/explore)
+[![Product Name Screen Shot][exploreModal]](https://finstagram-1.herokuapp.com/explore)
 
 
 Once you follow a user, their posts will appear on the feed page
 
 ### Newly followed users posts:
 
-[![Product Name Screen Shot][newlyFollowedPosts]](https://finstagram-project.herokuapp.com/explore)
+[![Product Name Screen Shot][newlyFollowedPosts]](https://finstagram-1.herokuapp.com/explore)
 <br>
 <br>
 
@@ -138,14 +138,14 @@ From any page where there are user posts or comments, you can click on a user's 
 
 ## Interesting Issues:
 ### Redux Interactions With Follow State
-[Back to top](#table-of-contents) 
+[Back to top](#table-of-contents)
 
 <b>Issue</b>: The explore page was based on a slice of state that held all of the user's posts of users that the current session user did not follow, while the feed page was based on a separate slice that held all of the user's posts of users that the session user <i>does</i> follow. This created an issue when following a user on the explore page, as the website would crash because it would be looking for a user in the non-followed user's posts slice after that user had been moved out of that redux slice of state. A similar issue would happen on the feed page when unfollowing a user.
 
 <b>Solution</b>: A new slice of state had to be made that held all users that both the explore and feed pages depended their views on. That way, whether a user was being followed or not, their movement between the followed users slice of state and the non-followed users slice of state did not affect the rendering of each page. This taught us the importance of not only thinking of ways to organize redux state, but how information would be moved between slices of state based on user interaction. In the future, it is important to think of how state is malleable, and how to defensively code against changes in state.
 
 ### Coordinating Feature Implementation With Multiple Collaborators
-[Back to top](#table-of-contents) 
+[Back to top](#table-of-contents)
 
 <b>Issue</b>: Though it may seem simple, having multiple people work on a project in tandem created some interesting challenges when it came to maximizing the efficiency of our coding, while preventing each of us from stepping on the others toes when it comes to editing the same files.
 
@@ -171,7 +171,7 @@ Josue E.J. Lugaro - [LinkedIn](https://www.linkedin.com/in/alejandro-c-grant/)
 
 Project Repo Link: [https://github.com/jcahela/Finstagram](https://github.com/jcahela/Finstagram)
 
-Project Link: [https://finstagram-project.herokuapp.com/](https://finstagram-project.herokuapp.com/)
+Project Link: [https://finstagram-1.herokuapp.com/](https://finstagram-1.herokuapp.com/)
 
 
 <!-- ACKNOWLEDGEMENTS --
