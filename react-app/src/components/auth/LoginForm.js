@@ -50,8 +50,7 @@ const LoginForm = () => {
       setButtonTheme('auth-button-easter-egg');
       setDemoButtonTheme('demo-button-easter-egg');
       setTextColor('light-auth-text');
-    }
-    else {
+    } else {
       setEasterEgg('auth-form');
       setInnerEleTheme('inner-form-ele');
       setErrorsTheme('auth-errors-div');
