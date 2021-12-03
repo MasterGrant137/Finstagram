@@ -1,8 +1,8 @@
 """User routes."""
 
-from flask import Blueprint, jsonify
+from flask import Blueprint
 from flask_login import login_required, current_user
-from app.models import User, Post, Comment
+from app.models import User
 
 user_routes = Blueprint('users', __name__)
 

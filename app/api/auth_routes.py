@@ -1,6 +1,6 @@
 """Authorization routes."""
 
-from flask import Blueprint, session, request
+from flask import Blueprint, request
 from app.models import User, db
 from app.forms import LoginForm
 from app.forms import SignUpForm
