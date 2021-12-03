@@ -1,7 +1,6 @@
 """Comment routes."""
 
 from flask import Blueprint, request
-from app.api.auth_routes import validation_errors_to_error_messages
 from app.models import Comment, db
 from flask_login import login_required, current_user
 from app.forms import CommentForm
