@@ -1,3 +1,5 @@
+"""Comment routes."""
+
 from flask import Blueprint, request
 from app.api.auth_routes import validation_errors_to_error_messages
 from app.models import Comment, db

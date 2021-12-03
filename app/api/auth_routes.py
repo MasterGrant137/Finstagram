@@ -1,4 +1,4 @@
-"""Authorization Routes."""
+"""Authorization routes."""
 
 from flask import Blueprint, session, request
 from app.models import User, db

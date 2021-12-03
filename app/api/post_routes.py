@@ -1,4 +1,4 @@
-"""Post Routes: /api/posts/."""
+"""Post routes."""
 
 from flask import Blueprint, request
 from app.models import Post, db
